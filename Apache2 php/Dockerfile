@@ -1,8 +1,8 @@
 FROM eboraas/apache-php
 
-RUN apt-get install software-properties-common
-
 RUN apt-get update
+
+RUN apt-get install software-properties-common
 RUN apt-add-repository ppa:ondrej/php
 RUN apt-get install -y curl --fix-missing
 RUN apt-get install -y git --fix-missing
