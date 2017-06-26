@@ -3,7 +3,7 @@ FROM eboraas/apache-php
 RUN apt-get update
 
 RUN apt-get install software-properties-common -y --fix-missing
-RUN apt-add-repository ppa:ondrej/php
+RUN add-apt-repository ppa:ondrej/php-7.0
 RUN apt-get install -y curl --fix-missing
 RUN apt-get install -y git --fix-missing
 RUN apt-get install -y nano --fix-missing
