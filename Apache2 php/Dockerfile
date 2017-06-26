@@ -6,18 +6,6 @@ RUN apt-get install software-properties-common -y --fix-missing
 RUN apt-add-repository ppa:ondrej/php
 RUN apt-get update
 
-RUN apt-get install \
-php7.0 \
-php7.0-cgi \
-php7.0-fpm \
-php7.0-curl \
-php7.0-gd \
-php7.0-dev \
-php7.0-json \
-php7.0-mcrypt \
-php7.0-mysql \
-php7.0-readline \
-php7.0-xmlrpc
 RUN apt-get install -y curl --fix-missing
 RUN apt-get install -y git --fix-missing
 RUN apt-get install -y nano --fix-missing
