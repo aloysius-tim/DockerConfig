@@ -16,7 +16,7 @@ RUN apt-get install -y nano --fix-missing
 RUN apt-get install -y php-curl --fix-missing --allow-unauthenticated
 
 RUN a2dismod php5*
-RUN a2enmod php7
+RUN a2enmod php7*
 RUN a2enmod rewrite
 
 
