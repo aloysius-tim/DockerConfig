@@ -8,6 +8,7 @@ RUN apt-get install -y nano --fix-missing
 RUN apt-get install -y php-curl --fix-missing --allow-unauthenticated
 
 RUN a2enmod rewrite
+RUN a2enmod headers
 
 RUN apt-get install composer -y
 RUN apt-get install php7.0-mbstring -y
