@@ -21,6 +21,6 @@ RUN a2enmod rewrite
 
 
 #RUN apt-get install composer
-RUN npm install -g yarn
+#RUN npm install -g yarn
 
 RUN service apache2 restart
