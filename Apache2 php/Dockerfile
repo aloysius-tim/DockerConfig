@@ -9,6 +9,6 @@ RUN apt-get install -y php-curl --fix-missing --allow-unauthenticated
 
 RUN a2enmod rewrite
 
-RUN apt-get install composer
+RUN apt-get install composer -y
 
 RUN service apache2 restart
