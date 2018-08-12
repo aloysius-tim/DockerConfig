@@ -1,0 +1,11 @@
+mongo 46.105.96.82/admin -u root -p sidney
+
+use my_db_name
+
+db.createUser(
+    {
+      user: "root",
+      pwd: "sidney",
+      roles: ["readWrite"]
+    }
+)

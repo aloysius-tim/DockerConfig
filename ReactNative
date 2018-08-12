@@ -1,0 +1,15 @@
+*****ReactNative*****
+
+** BUILD APK **
+ -> cd / && react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug
+ -> Android studio -> Build -> Build APK
+ -> cd android && adb install -r ./app/build/outputs/apk/app-debug.apk pour tester sur le simulateur
+
+** REBUILD ALL NATIVE **
+-> rm -rf ios android && react-native eject
+OR
+-> rm -rf ios android && react-native eject && add custom logos && react-native link
+
+** RUN ON SIMULATEUR **
+-> react-native run-android
+-> react-native log-android
